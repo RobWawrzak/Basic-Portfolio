@@ -6,6 +6,7 @@ body {
   font-size: 18px;
   background-color: lightslategray;
   width: auto;
+  overflow-wrap: break-word;
 }
 
 h1 {
@@ -18,6 +19,24 @@ h1 {
   color: #4aaaa5;
   padding-bottom: 20px;
   border-bottom: 2px solid gray;
+}
+
+h2 {
+  position: relative;
+  left: 0;
+  bottom: 90;
+  font-weight: bold;
+  font-family: 'Georgia', Cambria, Cochin, Georgia, Times, 'Times New Roman',
+    serif;
+  color: white;
+  font-size: 22px;
+  background-color: #4aaaa5;
+  padding: 30px 20px;
+  width: auto;
+}
+
+p {
+  width: auto;
 }
 
 .HeaderP {
@@ -78,6 +97,7 @@ h1 {
   width: 960px;
   height: auto;
   border: 2px solid #dddddd;
+  overflow: auto;
 }
 
 .me {
@@ -88,6 +108,7 @@ h1 {
 /* Footer */
 
 .Footer {
+  border-top: 2px solid #4aaaa5;
   display: flex;
   align-items: center;
   height: 80px;
@@ -155,4 +176,56 @@ input[type='submit'] {
 /* When moving the mouse over the submit button, add a darker green color */
 input[type='submit']:hover {
   background-color: #3a8581;
+}
+
+/* PORTFOLIO CSS */
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.contents {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  h2 {
+    width: 50%;
+  }
 }
