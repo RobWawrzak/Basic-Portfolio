@@ -1,12 +1,27 @@
 body {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   height: 100%;
+  color: #777777;
+  line-height: 110%;
+  font-size: 18px;
   background-color: lightslategray;
   width: auto;
 }
 
+h1 {
+  font-family: 'Georgia', Cambria, Cochin, Georgia, Times, 'Times New Roman',
+    serif;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #4aaaa5;
+  padding-bottom: 20px;
+  border-bottom: 2px solid gray;
+}
+
 .HeaderP {
-  height: 84px;
+  height: 79px;
   width: auto;
   margin-top: 0px;
   background-color: white;
@@ -65,29 +80,12 @@ body {
   border: 2px solid #dddddd;
 }
 
-p {
-  color: #777777;
-  display: block;
-  line-height: 110%;
-  font-size: 18px;
-}
-
-h1 {
-  font-family: 'Georgia', Cambria, Cochin, Georgia, Times, 'Times New Roman',
-    serif;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: #4aaaa5;
-  padding-bottom: 20px;
-  border-bottom: 2px solid gray;
-}
-
 .me {
   margin: 0px 5px 5px 0px;
   float: left;
 }
+
+/* Footer */
 
 .Footer {
   display: flex;
@@ -104,8 +102,10 @@ h1 {
 .Contact {
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
+  width: auto;
 }
+
+/* Facebook / LinkedIn Icons (part of above footer)*/
 
 .fa {
   padding: 20px;
@@ -124,4 +124,35 @@ h1 {
 .fa-linkedin {
   background: #007bb5;
   color: white;
+}
+
+/* Contact Me CSS */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type='text'],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type='submit'] {
+  background-color: #4aaaa5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type='submit']:hover {
+  background-color: #3a8581;
 }
